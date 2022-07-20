@@ -1,0 +1,678 @@
+{
+  "TestLedsGameData": {
+    "GearEx": 0,
+    "FuelMax": 100.0,
+    "RPMSMax": 10000.0,
+    "TurboMax": 3.5,
+    "TurnIndicatorLeftEnabled": true,
+    "TurnIndicatorRightEnabled": true,
+    "SessionBestDeltaEx": 0.0,
+    "AllTimeBestDeltaEx": 0.0,
+    "DRSEnabled": false,
+    "DRSAvailable": false,
+    "MaxRpm": 10000.0,
+    "GameRunning": true,
+    "GameName": null,
+    "Fuel": 4.0816326530612237,
+    "RPMPercent": 92.959183673469425,
+    "RPMRedlineReached": false,
+    "SpeedKmh": 0.0,
+    "SpeedMph": 0.0,
+    "Turbo": 0.0,
+    "TurboPercent": 0.0,
+    "Gear": "N",
+    "IsInPitLane": false,
+    "PitLimiterOn": false,
+    "AbsEnabled": false,
+    "AbsActive": true,
+    "TCEnabled": false,
+    "TCActive": true,
+    "LowFuelAlert": true,
+    "SpotterCarLeft": false,
+    "SpotterCarRight": false,
+    "BlackFlag": false,
+    "YellowFlag": false,
+    "WhiteFlag": false,
+    "BlueFlag": false,
+    "GreenFlag": false,
+    "CarModel": null,
+    "CarStartedTime": "0001-01-01T00:00:00",
+    "SessionBestDelta": 0.0,
+    "AllTimeBestDelta": 0.0
+  },
+  "LedContainers": [
+    {
+      "LedContainers": [
+        {
+          "TriggerFormula": {
+            "Expression": "[ACCCDS_Graphics.rainLights]",
+            "SimpleOperationProp": null
+          },
+          "ClearBackgroundWhenActive": false,
+          "LedContainers": [
+            {
+              "LedCount": 1,
+              "Color": "DarkOrange",
+              "BlinkEnabled": false,
+              "BlinkDelay": 500,
+              "DualBlinkTimingEnabled": false,
+              "OffDelay": 750,
+              "OnDelay": 125,
+              "StartPosition": 28,
+              "ContainerId": "48b78b07-869f-44c5-af6f-d5bf848416f4",
+              "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.StaticColorContainer",
+              "Description": "Generates a static color",
+              "IsEnabled": true
+            }
+          ],
+          "StackLeftToRight": false,
+          "StartPosition": 1,
+          "ContainerId": "19526fc9-f5a2-4017-b2e3-4182f6b00146",
+          "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Groups.CustomConditionalGroupContainer",
+          "Description": "Rain Light",
+          "IsEnabled": true
+        },
+        {
+          "TriggerFormula": {
+            "Expression": "[ACCCDS_Graphics.lightsStage] == 1",
+            "SimpleOperationProp": null
+          },
+          "ClearBackgroundWhenActive": false,
+          "LedContainers": [
+            {
+              "LedCount": 1,
+              "Color": "Lime",
+              "BlinkEnabled": false,
+              "BlinkDelay": 500,
+              "DualBlinkTimingEnabled": false,
+              "OffDelay": 750,
+              "OnDelay": 125,
+              "StartPosition": 13,
+              "ContainerId": "48b78b07-869f-44c5-af6f-d5bf848416f4",
+              "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.StaticColorContainer",
+              "Description": "Generates a static color",
+              "IsEnabled": true
+            }
+          ],
+          "StackLeftToRight": false,
+          "StartPosition": 1,
+          "ContainerId": "d1f42199-3f90-44c2-8bf2-43497b87bfc2",
+          "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Groups.CustomConditionalGroupContainer",
+          "Description": "Low Beam",
+          "IsEnabled": true
+        },
+        {
+          "TriggerFormula": {
+            "Expression": "[ACCCDS_Graphics.lightsStage] == 2",
+            "SimpleOperationProp": null
+          },
+          "ClearBackgroundWhenActive": false,
+          "LedContainers": [
+            {
+              "LedCount": 1,
+              "Color": "Blue",
+              "BlinkEnabled": false,
+              "BlinkDelay": 500,
+              "DualBlinkTimingEnabled": false,
+              "OffDelay": 750,
+              "OnDelay": 125,
+              "StartPosition": 13,
+              "ContainerId": "48b78b07-869f-44c5-af6f-d5bf848416f4",
+              "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.StaticColorContainer",
+              "Description": "Generates a static color",
+              "IsEnabled": true
+            }
+          ],
+          "StackLeftToRight": false,
+          "StartPosition": 1,
+          "ContainerId": "2c4796bf-75e0-46c0-9f8b-2fb6f43596e7",
+          "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Groups.CustomConditionalGroupContainer",
+          "Description": "High Beam",
+          "IsEnabled": true
+        },
+        {
+          "LedCount": 1,
+          "Color": "Orange",
+          "BlinkEnabled": true,
+          "BlinkDelay": 300,
+          "DualBlinkTimingEnabled": false,
+          "OffDelay": 750,
+          "OnDelay": 125,
+          "StartPosition": 16,
+          "ContainerId": "6832ce57-e1ff-42b4-899d-88e1fc567861",
+          "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Status.TurnIndicatorLeftContainer",
+          "Description": "Generates a static color when the left turn indicator is ON",
+          "IsEnabled": true
+        },
+        {
+          "LedCount": 1,
+          "Color": "Orange",
+          "BlinkEnabled": true,
+          "BlinkDelay": 300,
+          "DualBlinkTimingEnabled": false,
+          "OffDelay": 750,
+          "OnDelay": 125,
+          "StartPosition": 25,
+          "ContainerId": "96fbd720-3b29-4622-b253-47c26b47377e",
+          "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Status.TurnIndicatorRightContainer",
+          "Description": "Generates a static color when the right turn indicator is ON",
+          "IsEnabled": true
+        },
+        {
+          "LedCount": 3,
+          "Color": "Green",
+          "BlinkEnabled": false,
+          "BlinkDelay": 500,
+          "DualBlinkTimingEnabled": false,
+          "OffDelay": 750,
+          "OnDelay": 125,
+          "StartPosition": 14,
+          "ContainerId": "57c6d40e-3b86-4ee9-bd7f-808c8910d116",
+          "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Flags.GreenFlagContainer",
+          "Description": "Generates a static effect when the Green flag is ON",
+          "IsEnabled": true
+        },
+        {
+          "LedCount": 3,
+          "Color": "Green",
+          "BlinkEnabled": false,
+          "BlinkDelay": 500,
+          "DualBlinkTimingEnabled": false,
+          "OffDelay": 750,
+          "OnDelay": 125,
+          "StartPosition": 25,
+          "ContainerId": "d8957311-220e-4a95-9ba4-3ed5e44edbf4",
+          "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Flags.GreenFlagContainer",
+          "Description": "Generates a static effect when the Green flag is ON copy",
+          "IsEnabled": true
+        },
+        {
+          "LedCount": 3,
+          "Color": "White",
+          "BlinkEnabled": false,
+          "BlinkDelay": 500,
+          "DualBlinkTimingEnabled": false,
+          "OffDelay": 750,
+          "OnDelay": 125,
+          "StartPosition": 14,
+          "ContainerId": "40953ce0-0674-4b33-bb78-16c5e7862a8d",
+          "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Flags.WhiteFlagContainer",
+          "Description": "Generates a static effect when the White flag is ON",
+          "IsEnabled": true
+        },
+        {
+          "LedCount": 3,
+          "Color": "White",
+          "BlinkEnabled": false,
+          "BlinkDelay": 500,
+          "DualBlinkTimingEnabled": false,
+          "OffDelay": 750,
+          "OnDelay": 125,
+          "StartPosition": 25,
+          "ContainerId": "ddbd32c9-ee9d-4df7-b5e8-b564ff7cdb16",
+          "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Flags.WhiteFlagContainer",
+          "Description": "Generates a static effect when the White flag is ON copy",
+          "IsEnabled": true
+        },
+        {
+          "LedCount": 3,
+          "Color": "Blue",
+          "BlinkEnabled": false,
+          "BlinkDelay": 500,
+          "DualBlinkTimingEnabled": false,
+          "OffDelay": 750,
+          "OnDelay": 125,
+          "StartPosition": 14,
+          "ContainerId": "e0f2e1a2-d4d7-4bb2-9549-8fcf683efdd9",
+          "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Flags.BlueFlagContainer",
+          "Description": "Generates a static effect when the Blue flag is ON",
+          "IsEnabled": true
+        },
+        {
+          "LedCount": 3,
+          "Color": "Blue",
+          "BlinkEnabled": false,
+          "BlinkDelay": 500,
+          "DualBlinkTimingEnabled": false,
+          "OffDelay": 750,
+          "OnDelay": 125,
+          "StartPosition": 25,
+          "ContainerId": "763d4e2e-8a73-470c-a70c-eed86def022f",
+          "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Flags.BlueFlagContainer",
+          "Description": "Generates a static effect when the Blue flag is ON copy",
+          "IsEnabled": true
+        },
+        {
+          "LedCount": 3,
+          "Color": "Yellow",
+          "BlinkEnabled": false,
+          "BlinkDelay": 500,
+          "DualBlinkTimingEnabled": false,
+          "OffDelay": 750,
+          "OnDelay": 125,
+          "StartPosition": 14,
+          "ContainerId": "bb340d2c-49f5-4102-808a-70f3bcad36ab",
+          "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Flags.YellowFlagContainer",
+          "Description": "Generates a static effect when the Yellow flag is ON",
+          "IsEnabled": true
+        },
+        {
+          "LedCount": 3,
+          "Color": "Yellow",
+          "BlinkEnabled": false,
+          "BlinkDelay": 500,
+          "DualBlinkTimingEnabled": false,
+          "OffDelay": 750,
+          "OnDelay": 125,
+          "StartPosition": 25,
+          "ContainerId": "c851717e-1678-4f49-83d1-9c0279c0168e",
+          "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Flags.YellowFlagContainer",
+          "Description": "Generates a static effect when the Yellow flag is ON copy",
+          "IsEnabled": true
+        },
+        {
+          "LedCount": 1,
+          "Color": "Red",
+          "BlinkEnabled": true,
+          "BlinkDelay": 750,
+          "DualBlinkTimingEnabled": false,
+          "OffDelay": 750,
+          "OnDelay": 125,
+          "StartPosition": 15,
+          "ContainerId": "b22a0b32-ff50-4abb-9d60-ed9699784fbc",
+          "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Status.LowFuelRemainingLapsAlertContainer",
+          "Description": "Generates a static effect when remaining laps are low",
+          "IsEnabled": false
+        },
+        {
+          "LedCount": 1,
+          "Color": "Red",
+          "BlinkEnabled": true,
+          "BlinkDelay": 750,
+          "DualBlinkTimingEnabled": false,
+          "OffDelay": 750,
+          "OnDelay": 125,
+          "StartPosition": 26,
+          "ContainerId": "65b4d8b5-354c-4618-bd57-d483315170c5",
+          "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Status.LowFuelRemainingLapsAlertContainer",
+          "Description": "Generates a static effect when remaining laps are low copy",
+          "IsEnabled": false
+        },
+        {
+          "TriggerFormula": {
+            "Expression": "[Fuel]>0 and [Fuel]<10",
+            "SimpleOperationProp": null
+          },
+          "ClearBackgroundWhenActive": false,
+          "LedContainers": [
+            {
+              "LedCount": 1,
+              "Color": "Red",
+              "BlinkEnabled": true,
+              "BlinkDelay": 750,
+              "DualBlinkTimingEnabled": false,
+              "OffDelay": 750,
+              "OnDelay": 125,
+              "StartPosition": 15,
+              "ContainerId": "0795b92b-ff67-414e-9035-1a4c14f8e323",
+              "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.StaticColorContainer",
+              "Description": "Generates a static color",
+              "IsEnabled": true
+            },
+            {
+              "LedCount": 1,
+              "Color": "Red",
+              "BlinkEnabled": true,
+              "BlinkDelay": 750,
+              "DualBlinkTimingEnabled": false,
+              "OffDelay": 750,
+              "OnDelay": 125,
+              "StartPosition": 26,
+              "ContainerId": "a99fc2f1-a86c-47b1-a8a0-62a991690775",
+              "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.StaticColorContainer",
+              "Description": "Generates a static color copy",
+              "IsEnabled": true
+            }
+          ],
+          "StackLeftToRight": false,
+          "StartPosition": 1,
+          "ContainerId": "f21aac01-7a0f-48c6-8da3-87c6246fb231",
+          "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Groups.CustomConditionalGroupContainer",
+          "Description": "Enable content based on a custom formula",
+          "IsEnabled": true
+        },
+        {
+          "ClearBackgroundWhenActive": false,
+          "TotalWidth": 40,
+          "LedContainers": [
+            {
+              "BlinkDelay": 125,
+              "Segments": [
+                {
+                  "StartValue": 80.0,
+                  "EndValue": 0.0,
+                  "NormalColor": "Lime",
+                  "BlinkingColor": "Blue",
+                  "UseBlinkingColor": true,
+                  "LedCount": 1,
+                  "SampleResult": {
+                    "Width": 1,
+                    "Position": 0,
+                    "Columns": -1
+                  }
+                },
+                {
+                  "StartValue": 85.0,
+                  "EndValue": 0.0,
+                  "NormalColor": "Red",
+                  "BlinkingColor": "Blue",
+                  "UseBlinkingColor": true,
+                  "LedCount": 5,
+                  "SampleResult": {
+                    "Width": 5,
+                    "Position": 0,
+                    "Columns": -1
+                  }
+                },
+                {
+                  "StartValue": 99.0,
+                  "EndValue": 0.0,
+                  "NormalColor": "Blue",
+                  "BlinkingColor": "Blue",
+                  "UseBlinkingColor": true,
+                  "LedCount": 5,
+                  "SampleResult": {
+                    "Width": 5,
+                    "Position": 0,
+                    "Columns": -1
+                  }
+                }
+              ],
+              "SegmentsCount": 1,
+              "BlinkEnabled": true,
+              "BlinkOnLastGear": false,
+              "StartPosition": 17,
+              "ContainerId": "0bec6af8-8a0a-4aa4-84d0-cab7e1bb9450",
+              "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.RPMSegmentsContainer",
+              "Description": "Show leds solid effect segments based on car RPMs",
+              "IsEnabled": true
+            },
+            {
+              "BlinkDelay": 125,
+              "Segments": [
+                {
+                  "StartValue": 83.0,
+                  "EndValue": 0.0,
+                  "NormalColor": "Lime",
+                  "BlinkingColor": "Blue",
+                  "UseBlinkingColor": true,
+                  "LedCount": 1,
+                  "SampleResult": {
+                    "Width": 1,
+                    "Position": 0,
+                    "Columns": -1
+                  }
+                },
+                {
+                  "StartValue": 85.0,
+                  "EndValue": 0.0,
+                  "NormalColor": "Red",
+                  "BlinkingColor": "Blue",
+                  "UseBlinkingColor": true,
+                  "LedCount": 5,
+                  "SampleResult": {
+                    "Width": 5,
+                    "Position": 0,
+                    "Columns": -1
+                  }
+                },
+                {
+                  "StartValue": 99.0,
+                  "EndValue": 0.0,
+                  "NormalColor": "Blue",
+                  "BlinkingColor": "Blue",
+                  "UseBlinkingColor": true,
+                  "LedCount": 5,
+                  "SampleResult": {
+                    "Width": 5,
+                    "Position": 0,
+                    "Columns": -1
+                  }
+                }
+              ],
+              "SegmentsCount": 1,
+              "BlinkEnabled": true,
+              "BlinkOnLastGear": false,
+              "StartPosition": 18,
+              "ContainerId": "d25517c4-e57a-4300-b2e1-78573aa318b6",
+              "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.RPMSegmentsContainer",
+              "Description": "Show leds solid effect segments based on car RPMs",
+              "IsEnabled": true
+            },
+            {
+              "BlinkDelay": 125,
+              "Segments": [
+                {
+                  "StartValue": 86.0,
+                  "EndValue": 0.0,
+                  "NormalColor": "Yellow",
+                  "BlinkingColor": "Blue",
+                  "UseBlinkingColor": true,
+                  "LedCount": 1,
+                  "SampleResult": {
+                    "Width": 1,
+                    "Position": 0,
+                    "Columns": -1
+                  }
+                },
+                {
+                  "StartValue": 85.0,
+                  "EndValue": 0.0,
+                  "NormalColor": "Red",
+                  "BlinkingColor": "Blue",
+                  "UseBlinkingColor": true,
+                  "LedCount": 5,
+                  "SampleResult": {
+                    "Width": 5,
+                    "Position": 0,
+                    "Columns": -1
+                  }
+                },
+                {
+                  "StartValue": 99.0,
+                  "EndValue": 0.0,
+                  "NormalColor": "Blue",
+                  "BlinkingColor": "Blue",
+                  "UseBlinkingColor": true,
+                  "LedCount": 5,
+                  "SampleResult": {
+                    "Width": 5,
+                    "Position": 0,
+                    "Columns": -1
+                  }
+                }
+              ],
+              "SegmentsCount": 1,
+              "BlinkEnabled": true,
+              "BlinkOnLastGear": false,
+              "StartPosition": 19,
+              "ContainerId": "ec694e8b-8208-4b26-8762-3d8fb92748c1",
+              "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.RPMSegmentsContainer",
+              "Description": "Show leds solid effect segments based on car RPMs",
+              "IsEnabled": true
+            },
+            {
+              "BlinkDelay": 125,
+              "Segments": [
+                {
+                  "StartValue": 92.0,
+                  "EndValue": 0.0,
+                  "NormalColor": "Red",
+                  "BlinkingColor": "Blue",
+                  "UseBlinkingColor": true,
+                  "LedCount": 1,
+                  "SampleResult": {
+                    "Width": 1,
+                    "Position": 0,
+                    "Columns": -1
+                  }
+                },
+                {
+                  "StartValue": 85.0,
+                  "EndValue": 0.0,
+                  "NormalColor": "Red",
+                  "BlinkingColor": "Blue",
+                  "UseBlinkingColor": true,
+                  "LedCount": 5,
+                  "SampleResult": {
+                    "Width": 5,
+                    "Position": 0,
+                    "Columns": -1
+                  }
+                },
+                {
+                  "StartValue": 99.0,
+                  "EndValue": 0.0,
+                  "NormalColor": "Blue",
+                  "BlinkingColor": "Blue",
+                  "UseBlinkingColor": true,
+                  "LedCount": 5,
+                  "SampleResult": {
+                    "Width": 5,
+                    "Position": 0,
+                    "Columns": -1
+                  }
+                }
+              ],
+              "SegmentsCount": 1,
+              "BlinkEnabled": true,
+              "BlinkOnLastGear": false,
+              "StartPosition": 20,
+              "ContainerId": "d85b5b14-2aae-4769-bf08-f97c7c067878",
+              "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.RPMSegmentsContainer",
+              "Description": "Show leds solid effect segments based on car RPMs",
+              "IsEnabled": true
+            },
+            {
+              "LedCount": 4,
+              "Color": "Blue",
+              "BlinkEnabled": true,
+              "BlinkDelay": 500,
+              "DualBlinkTimingEnabled": false,
+              "OffDelay": 750,
+              "OnDelay": 125,
+              "StartPosition": 17,
+              "ContainerId": "3fad92bc-5fac-46b7-b3e0-97623a774a4c",
+              "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Status.SpeedLimiterContainer",
+              "Description": "Generates a static effect when the speed limiter is ON",
+              "IsEnabled": true
+            }
+          ],
+          "StackLeftToRight": false,
+          "StartPosition": 1,
+          "ContainerId": "268a4a8e-a9c7-437a-aaa9-57e648de6461",
+          "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Groups.MirrorGroupContainer",
+          "Description": "Mirror leds",
+          "IsEnabled": true
+        },
+        {
+          "LedCount": 8,
+          "Color": "Red",
+          "BlinkEnabled": true,
+          "BlinkDelay": 500,
+          "DualBlinkTimingEnabled": true,
+          "OffDelay": 100,
+          "OnDelay": 200,
+          "StartPosition": 1,
+          "ContainerId": "8a879e9d-eea5-4ec6-a329-6d6c2bc19dc6",
+          "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Status.SpotterCarLeftContainer",
+          "Description": "Generates a static effect when the a car is at your left",
+          "IsEnabled": true
+        },
+        {
+          "LedCount": 4,
+          "Color": "Yellow",
+          "BlinkEnabled": false,
+          "BlinkDelay": 500,
+          "DualBlinkTimingEnabled": false,
+          "OffDelay": 750,
+          "OnDelay": 125,
+          "StartPosition": 1,
+          "ContainerId": "fb18b93c-9df6-4260-8702-65e0419b4e0f",
+          "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Status.AbsActiveContainer",
+          "Description": "Generates a static effect when the ABS is currently active",
+          "IsEnabled": true
+        },
+        {
+          "LedCount": 4,
+          "Color": "Purple",
+          "BlinkEnabled": false,
+          "BlinkDelay": 500,
+          "DualBlinkTimingEnabled": false,
+          "OffDelay": 750,
+          "OnDelay": 125,
+          "StartPosition": 5,
+          "ContainerId": "0b37912b-8598-4c2f-95c4-9a40a26373e8",
+          "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Status.TCActiveContainer",
+          "Description": "Generates a static effect when the traction control is currently active",
+          "IsEnabled": true
+        },
+        {
+          "LedCount": 8,
+          "Color": "Red",
+          "BlinkEnabled": true,
+          "BlinkDelay": 500,
+          "DualBlinkTimingEnabled": true,
+          "OffDelay": 100,
+          "OnDelay": 200,
+          "StartPosition": 33,
+          "ContainerId": "57169d22-cac0-41f7-b590-cf33c2f51f83",
+          "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Status.SpotterCarRightContainer",
+          "Description": "Generates a static effect when the a car is at your right",
+          "IsEnabled": true
+        },
+        {
+          "LedCount": 4,
+          "Color": "Yellow",
+          "BlinkEnabled": false,
+          "BlinkDelay": 500,
+          "DualBlinkTimingEnabled": false,
+          "OffDelay": 750,
+          "OnDelay": 125,
+          "StartPosition": 37,
+          "ContainerId": "0b7744c1-c89a-4eef-a140-735804602429",
+          "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Status.AbsActiveContainer",
+          "Description": "Generates a static effect when the ABS is currently active copy",
+          "IsEnabled": true
+        },
+        {
+          "LedCount": 4,
+          "Color": "Purple",
+          "BlinkEnabled": false,
+          "BlinkDelay": 500,
+          "DualBlinkTimingEnabled": false,
+          "OffDelay": 750,
+          "OnDelay": 125,
+          "StartPosition": 33,
+          "ContainerId": "dbf35ad6-81a5-4c23-a6cd-c0e6f30bc8df",
+          "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Status.TCActiveContainer",
+          "Description": "Generates a static effect when the traction control is currently active copy",
+          "IsEnabled": true
+        }
+      ],
+      "StackLeftToRight": false,
+      "StartPosition": 1,
+      "ContainerId": "a02009f1-4bdb-41fa-a723-3bcc396be218",
+      "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Base.GroupContainer",
+      "Description": "Group",
+      "IsEnabled": true
+    }
+  ],
+  "GlobalBrightness": 50.0,
+  "UseProfileBrightness": true,
+  "Error": "",
+  "LastLoaded": "2022-04-07T14:50:22.6574637-04:00",
+  "Name": "Porsche_991_GT3R_Dashboard_RGB_LED_Profile",
+  "ProfileId": "bb8415e9-924f-4d0f-8cf8-2b1d6a91a6a8",
+  "GameCode": null
+}
