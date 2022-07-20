@@ -6,31 +6,31 @@
 
 ![Example](images/example.png)
 
-This Simhub LED profile is designed for 5 8 led WS2812B strips.
+This Simhub LED profile is designed for 5 x 8 led `WS2812B` strips.
 The 40 combined led are split in 3 groups:
 
-* ABS/TC/Spotter
-* Alarms/Flags
+* ABS / TC / Spotter
+* Alarms / Flags
 * Shift light
 
 ### Effects
 
 #### Turn indicators
 
-LED 16 & 25 indicates left and right turn signals when on.
+LED `16` & `25` indicates left and right turn signals when on.
 
 #### Flags
 
-Alarms/flags LED ([14, 15, 16] & [25, 26, 28]) indicates green, white, blue and
+Alarms/flags LED ([`14`, `15`, `16`] & [`25`, `26`, `28`]) indicates green, white, blue and
 yellow flags.
 
 #### Low fuel
 
-LED 16 & 25 indicates (red blinking) low fuel (when fuel is less than 10L).
+LED `16` & `25` indicates (red blinking) low fuel (when fuel is lower than 10L).
 
 #### Shift light
 
-the LED 17 to 25 are used for RPM display. LED 17 to 21 are mirrored to mimic
+the LED `17` to `25` are used for RPM display. LED `17` to `21` are mirrored to mimic
 the Porsche 991 GT3R II shift light (from green to red with yellow center led
 and on 8 led rather than 10) and blink blue when redline is reached.
 
@@ -59,12 +59,12 @@ The Porsche dashboard is based on [the work from Erik_27](https://www.racedepart
 
 The dashboard is composed of 4 screens:
 
-- Idle (The loading screen with the Porsche logo)
-- RACE 1
-- QUALI
-- RACE 2
+- `Idle` (The loading screen with the Porsche logo)
+- `RACE 1`
+- `QUALI`
+- `RACE 2`
 
-(they're actually sorted in this order: ["RACE 1", "QUALI", "RACE 2"])
+(they're actually sorted in this order: [`RACE 1`, `QUALI`, `RACE 2`])
 
 ### High Beam
 
