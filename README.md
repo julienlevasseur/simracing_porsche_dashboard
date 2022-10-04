@@ -99,4 +99,10 @@ The dashboard is composed of 4 screens:
 
 ### Position
 
-As visible in the screenshots above, the current position has been added to the screen `RACE 2`.
+As visible in the screenshots above, the current position has been added to the `QUALI` and `RACE 2` screens.
+
+### Brake Bias
+
+The brake bias value is available on `QUALI` and `RACE 2` screens.
+
+![BB](images/BB.PNG)
