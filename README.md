@@ -101,8 +101,11 @@ The dashboard is composed of 4 screens:
 
 As visible in the screenshots above, the current position has been added to the `QUALI` and `RACE 2` screens.
 
-### Brake Bias
+### Brake Bias + Last Lap & Best Lap
 
-The brake bias value is available on `QUALI` and `RACE 2` screens.
+The brake bias value is available on all screens as well as Last Lap and Best Lap times.
 
-![BB](images/BB.PNG)
+![BB & Laps](images/bb_last_lap_best_lap.PNG)
+### Position color change for P1 to P3
+
+The color of the position text is adapted to the position if it's between 1 and 3.
