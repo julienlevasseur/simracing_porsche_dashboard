@@ -1,11 +1,11 @@
 {
   "TestLedsGameData": {
-    "GearEx": 0,
+    "GearEx": 7,
     "FuelMax": 100.0,
     "RPMSMax": 10000.0,
     "TurboMax": 3.5,
-    "TurnIndicatorLeftEnabled": true,
-    "TurnIndicatorRightEnabled": true,
+    "TurnIndicatorLeftEnabled": false,
+    "TurnIndicatorRightEnabled": false,
     "SessionBestDeltaEx": 0.0,
     "AllTimeBestDeltaEx": 0.0,
     "DRSEnabled": false,
@@ -13,21 +13,21 @@
     "MaxRpm": 10000.0,
     "GameRunning": true,
     "GameName": null,
-    "Fuel": 4.0816326530612237,
-    "RPMPercent": 92.959183673469425,
+    "Fuel": 21.428571428571427,
+    "RPMPercent": 61.734693877551031,
     "RPMRedlineReached": false,
     "SpeedKmh": 0.0,
     "SpeedMph": 0.0,
     "Turbo": 0.0,
     "TurboPercent": 0.0,
-    "Gear": "N",
+    "Gear": "7",
     "IsInPitLane": false,
     "PitLimiterOn": false,
     "AbsEnabled": false,
-    "AbsActive": true,
+    "AbsActive": false,
     "TCEnabled": false,
-    "TCActive": true,
-    "LowFuelAlert": true,
+    "TCActive": false,
+    "LowFuelAlert": false,
     "SpotterCarLeft": false,
     "SpotterCarRight": false,
     "BlackFlag": false,
@@ -35,8 +35,8 @@
     "WhiteFlag": false,
     "BlueFlag": false,
     "GreenFlag": false,
-    "CarModel": null,
-    "CarStartedTime": "0001-01-01T00:00:00",
+    "CarModel": "porsche_991ii_gt3_r",
+    "CarStartedTime": "2022-07-20T21:34:48.8374343-04:00",
     "SessionBestDelta": 0.0,
     "AllTimeBestDelta": 0.0
   },
@@ -45,8 +45,231 @@
       "LedContainers": [
         {
           "TriggerFormula": {
-            "Expression": "[ACCCDS_Graphics.rainLights]",
-            "SimpleOperationProp": null
+            "Expression": "changed(5000, isnull([DataCorePlugin.GameData.NewData.Flag_Checkered],0))"
+          },
+          "ClearBackgroundWhenActive": false,
+          "LedContainers": [
+            {
+              "Animation": {
+                "Columns": 1,
+                "Rows": 3,
+                "TotalDuration": 200,
+                "Frames": [
+                  {
+                    "FrameId": "1d6fe19e-9ea0-44b5-8e66-7f138525982d",
+                    "Colors": {
+                      "0": {
+                        "0": {
+                          "X": 0,
+                          "Y": 0,
+                          "Color": "Black"
+                        },
+                        "1": {
+                          "X": 1,
+                          "Y": 0,
+                          "Color": "Transparent"
+                        },
+                        "2": {
+                          "X": 2,
+                          "Y": 0,
+                          "Color": "Transparent"
+                        },
+                        "3": {
+                          "X": 3,
+                          "Y": 0,
+                          "Color": "Transparent"
+                        },
+                        "4": {
+                          "X": 4,
+                          "Y": 0,
+                          "Color": "Transparent"
+                        },
+                        "5": {
+                          "X": 5,
+                          "Y": 0,
+                          "Color": "Transparent"
+                        },
+                        "6": {
+                          "X": 6,
+                          "Y": 0,
+                          "Color": "Transparent"
+                        },
+                        "7": {
+                          "X": 7,
+                          "Y": 0,
+                          "Color": "Transparent"
+                        }
+                      },
+                      "1": {
+                        "0": {
+                          "X": 0,
+                          "Y": 1,
+                          "Color": "White"
+                        }
+                      },
+                      "2": {
+                        "0": {
+                          "X": 0,
+                          "Y": 2,
+                          "Color": "Black"
+                        }
+                      }
+                    },
+                    "FrameDuration": 100
+                  },
+                  {
+                    "FrameId": "3669a967-f36c-41e0-a9fc-e6cb1c67c911",
+                    "Colors": {
+                      "0": {
+                        "0": {
+                          "X": 0,
+                          "Y": 0,
+                          "Color": "White"
+                        }
+                      },
+                      "1": {
+                        "0": {
+                          "X": 0,
+                          "Y": 1,
+                          "Color": "Black"
+                        }
+                      },
+                      "2": {
+                        "0": {
+                          "X": 0,
+                          "Y": 2,
+                          "Color": "White"
+                        }
+                      }
+                    },
+                    "FrameDuration": 100
+                  }
+                ],
+                "SelectedFrameId": "3669a967-f36c-41e0-a9fc-e6cb1c67c911",
+                "PenColor": "Black"
+              },
+              "StartPosition": 14,
+              "ContainerId": "a3598e4a-1b02-4d30-a522-7fbaec0eb27f",
+              "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.AnimationContainer",
+              "Description": "Hand drawn animation/pattern",
+              "IsEnabled": true
+            },
+            {
+              "Animation": {
+                "Columns": 1,
+                "Rows": 3,
+                "TotalDuration": 200,
+                "Frames": [
+                  {
+                    "FrameId": "afa54b87-cc28-49b3-8974-4af3d29644dd",
+                    "Colors": {
+                      "0": {
+                        "0": {
+                          "X": 0,
+                          "Y": 0,
+                          "Color": "White"
+                        },
+                        "1": {
+                          "X": 1,
+                          "Y": 0,
+                          "Color": "Transparent"
+                        },
+                        "2": {
+                          "X": 2,
+                          "Y": 0,
+                          "Color": "Transparent"
+                        },
+                        "3": {
+                          "X": 3,
+                          "Y": 0,
+                          "Color": "Transparent"
+                        },
+                        "4": {
+                          "X": 4,
+                          "Y": 0,
+                          "Color": "Transparent"
+                        },
+                        "5": {
+                          "X": 5,
+                          "Y": 0,
+                          "Color": "Transparent"
+                        },
+                        "6": {
+                          "X": 6,
+                          "Y": 0,
+                          "Color": "Transparent"
+                        },
+                        "7": {
+                          "X": 7,
+                          "Y": 0,
+                          "Color": "Transparent"
+                        }
+                      },
+                      "1": {
+                        "0": {
+                          "X": 0,
+                          "Y": 1,
+                          "Color": "Black"
+                        }
+                      },
+                      "2": {
+                        "0": {
+                          "X": 0,
+                          "Y": 2,
+                          "Color": "White"
+                        }
+                      }
+                    },
+                    "FrameDuration": 100
+                  },
+                  {
+                    "FrameId": "c22e7397-7804-485f-bf23-a93d5c395984",
+                    "Colors": {
+                      "0": {
+                        "0": {
+                          "X": 0,
+                          "Y": 0,
+                          "Color": "Black"
+                        }
+                      },
+                      "1": {
+                        "0": {
+                          "X": 0,
+                          "Y": 1,
+                          "Color": "White"
+                        }
+                      },
+                      "2": {
+                        "0": {
+                          "X": 0,
+                          "Y": 2,
+                          "Color": "Black"
+                        }
+                      }
+                    },
+                    "FrameDuration": 100
+                  }
+                ],
+                "SelectedFrameId": "c22e7397-7804-485f-bf23-a93d5c395984",
+                "PenColor": "Black"
+              },
+              "StartPosition": 25,
+              "ContainerId": "9f712911-a80b-48fb-ad82-749d1c314b50",
+              "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.AnimationContainer",
+              "Description": "Hand drawn animation/pattern",
+              "IsEnabled": true
+            }
+          ],
+          "StackLeftToRight": false,
+          "StartPosition": 1,
+          "ContainerId": "57a6b3ec-084f-48b9-8d7e-88bf78971c88",
+          "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Groups.CustomConditionalGroupContainer",
+          "Description": "Checkered Flag",
+          "IsEnabled": true
+        },
+        {
+          "TriggerFormula": {
+            "Expression": "[ACCCDS_Graphics.rainLights]"
           },
           "ClearBackgroundWhenActive": false,
           "LedContainers": [
@@ -74,8 +297,7 @@
         },
         {
           "TriggerFormula": {
-            "Expression": "[ACCCDS_Graphics.lightsStage] == 1",
-            "SimpleOperationProp": null
+            "Expression": "[ACCCDS_Graphics.lightsStage] == 1"
           },
           "ClearBackgroundWhenActive": false,
           "LedContainers": [
@@ -103,8 +325,7 @@
         },
         {
           "TriggerFormula": {
-            "Expression": "[ACCCDS_Graphics.lightsStage] == 2",
-            "SimpleOperationProp": null
+            "Expression": "[ACCCDS_Graphics.lightsStage] == 2"
           },
           "ClearBackgroundWhenActive": false,
           "LedContainers": [
@@ -132,13 +353,13 @@
         },
         {
           "LedCount": 1,
-          "Color": "Orange",
-          "BlinkEnabled": true,
-          "BlinkDelay": 300,
+          "Color": "DarkGreen",
+          "BlinkEnabled": false,
+          "BlinkDelay": 200,
           "DualBlinkTimingEnabled": false,
           "OffDelay": 750,
           "OnDelay": 125,
-          "StartPosition": 16,
+          "StartPosition": 14,
           "ContainerId": "6832ce57-e1ff-42b4-899d-88e1fc567861",
           "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Status.TurnIndicatorLeftContainer",
           "Description": "Generates a static color when the left turn indicator is ON",
@@ -146,13 +367,13 @@
         },
         {
           "LedCount": 1,
-          "Color": "Orange",
-          "BlinkEnabled": true,
+          "Color": "DarkGreen",
+          "BlinkEnabled": false,
           "BlinkDelay": 300,
           "DualBlinkTimingEnabled": false,
           "OffDelay": 750,
           "OnDelay": 125,
-          "StartPosition": 25,
+          "StartPosition": 27,
           "ContainerId": "96fbd720-3b29-4622-b253-47c26b47377e",
           "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Status.TurnIndicatorRightContainer",
           "Description": "Generates a static color when the right turn indicator is ON",
@@ -187,21 +408,21 @@
           "IsEnabled": true
         },
         {
-          "LedCount": 3,
+          "LedCount": 1,
           "Color": "White",
           "BlinkEnabled": false,
           "BlinkDelay": 500,
           "DualBlinkTimingEnabled": false,
           "OffDelay": 750,
           "OnDelay": 125,
-          "StartPosition": 14,
+          "StartPosition": 16,
           "ContainerId": "40953ce0-0674-4b33-bb78-16c5e7862a8d",
           "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Flags.WhiteFlagContainer",
           "Description": "Generates a static effect when the White flag is ON",
           "IsEnabled": true
         },
         {
-          "LedCount": 3,
+          "LedCount": 1,
           "Color": "White",
           "BlinkEnabled": false,
           "BlinkDelay": 500,
@@ -217,10 +438,10 @@
         {
           "LedCount": 3,
           "Color": "Blue",
-          "BlinkEnabled": false,
+          "BlinkEnabled": true,
           "BlinkDelay": 500,
-          "DualBlinkTimingEnabled": false,
-          "OffDelay": 750,
+          "DualBlinkTimingEnabled": true,
+          "OffDelay": 500,
           "OnDelay": 125,
           "StartPosition": 14,
           "ContainerId": "e0f2e1a2-d4d7-4bb2-9549-8fcf683efdd9",
@@ -231,10 +452,10 @@
         {
           "LedCount": 3,
           "Color": "Blue",
-          "BlinkEnabled": false,
+          "BlinkEnabled": true,
           "BlinkDelay": 500,
-          "DualBlinkTimingEnabled": false,
-          "OffDelay": 750,
+          "DualBlinkTimingEnabled": true,
+          "OffDelay": 500,
           "OnDelay": 125,
           "StartPosition": 25,
           "ContainerId": "763d4e2e-8a73-470c-a70c-eed86def022f",
@@ -245,8 +466,8 @@
         {
           "LedCount": 3,
           "Color": "Yellow",
-          "BlinkEnabled": false,
-          "BlinkDelay": 500,
+          "BlinkEnabled": true,
+          "BlinkDelay": 100,
           "DualBlinkTimingEnabled": false,
           "OffDelay": 750,
           "OnDelay": 125,
@@ -259,8 +480,8 @@
         {
           "LedCount": 3,
           "Color": "Yellow",
-          "BlinkEnabled": false,
-          "BlinkDelay": 500,
+          "BlinkEnabled": true,
+          "BlinkDelay": 100,
           "DualBlinkTimingEnabled": false,
           "OffDelay": 750,
           "OnDelay": 125,
@@ -300,8 +521,7 @@
         },
         {
           "TriggerFormula": {
-            "Expression": "[Fuel]>0 and [Fuel]<10",
-            "SimpleOperationProp": null
+            "Expression": "[Fuel]>0 and [Fuel]<10"
           },
           "ClearBackgroundWhenActive": false,
           "LedContainers": [
@@ -338,7 +558,7 @@
           "StartPosition": 1,
           "ContainerId": "f21aac01-7a0f-48c6-8da3-87c6246fb231",
           "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Groups.CustomConditionalGroupContainer",
-          "Description": "Enable content based on a custom formula",
+          "Description": "Low Fuel",
           "IsEnabled": true
         },
         {
@@ -358,7 +578,8 @@
                   "SampleResult": {
                     "Width": 1,
                     "Position": 0,
-                    "Columns": -1
+                    "Columns": -1,
+                    "UsedData": null
                   }
                 },
                 {
@@ -371,7 +592,8 @@
                   "SampleResult": {
                     "Width": 5,
                     "Position": 0,
-                    "Columns": -1
+                    "Columns": -1,
+                    "UsedData": null
                   }
                 },
                 {
@@ -384,12 +606,14 @@
                   "SampleResult": {
                     "Width": 5,
                     "Position": 0,
-                    "Columns": -1
+                    "Columns": -1,
+                    "UsedData": null
                   }
                 }
               ],
               "SegmentsCount": 1,
               "BlinkEnabled": true,
+              "RelativeToRedline": false,
               "BlinkOnLastGear": false,
               "StartPosition": 17,
               "ContainerId": "0bec6af8-8a0a-4aa4-84d0-cab7e1bb9450",
@@ -410,7 +634,8 @@
                   "SampleResult": {
                     "Width": 1,
                     "Position": 0,
-                    "Columns": -1
+                    "Columns": -1,
+                    "UsedData": null
                   }
                 },
                 {
@@ -423,7 +648,8 @@
                   "SampleResult": {
                     "Width": 5,
                     "Position": 0,
-                    "Columns": -1
+                    "Columns": -1,
+                    "UsedData": null
                   }
                 },
                 {
@@ -436,12 +662,14 @@
                   "SampleResult": {
                     "Width": 5,
                     "Position": 0,
-                    "Columns": -1
+                    "Columns": -1,
+                    "UsedData": null
                   }
                 }
               ],
               "SegmentsCount": 1,
               "BlinkEnabled": true,
+              "RelativeToRedline": false,
               "BlinkOnLastGear": false,
               "StartPosition": 18,
               "ContainerId": "d25517c4-e57a-4300-b2e1-78573aa318b6",
@@ -462,7 +690,8 @@
                   "SampleResult": {
                     "Width": 1,
                     "Position": 0,
-                    "Columns": -1
+                    "Columns": -1,
+                    "UsedData": null
                   }
                 },
                 {
@@ -475,7 +704,8 @@
                   "SampleResult": {
                     "Width": 5,
                     "Position": 0,
-                    "Columns": -1
+                    "Columns": -1,
+                    "UsedData": null
                   }
                 },
                 {
@@ -488,12 +718,14 @@
                   "SampleResult": {
                     "Width": 5,
                     "Position": 0,
-                    "Columns": -1
+                    "Columns": -1,
+                    "UsedData": null
                   }
                 }
               ],
               "SegmentsCount": 1,
               "BlinkEnabled": true,
+              "RelativeToRedline": false,
               "BlinkOnLastGear": false,
               "StartPosition": 19,
               "ContainerId": "ec694e8b-8208-4b26-8762-3d8fb92748c1",
@@ -514,7 +746,8 @@
                   "SampleResult": {
                     "Width": 1,
                     "Position": 0,
-                    "Columns": -1
+                    "Columns": -1,
+                    "UsedData": null
                   }
                 },
                 {
@@ -527,7 +760,8 @@
                   "SampleResult": {
                     "Width": 5,
                     "Position": 0,
-                    "Columns": -1
+                    "Columns": -1,
+                    "UsedData": null
                   }
                 },
                 {
@@ -540,12 +774,14 @@
                   "SampleResult": {
                     "Width": 5,
                     "Position": 0,
-                    "Columns": -1
+                    "Columns": -1,
+                    "UsedData": null
                   }
                 }
               ],
               "SegmentsCount": 1,
               "BlinkEnabled": true,
+              "RelativeToRedline": false,
               "BlinkOnLastGear": false,
               "StartPosition": 20,
               "ContainerId": "d85b5b14-2aae-4769-bf08-f97c7c067878",
@@ -565,6 +801,112 @@
               "ContainerId": "3fad92bc-5fac-46b7-b3e0-97623a774a4c",
               "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Status.SpeedLimiterContainer",
               "Description": "Generates a static effect when the speed limiter is ON",
+              "IsEnabled": false
+            },
+            {
+              "TriggerFormula": {
+                "Expression": "[PitLimiterOn] == 1"
+              },
+              "ClearBackgroundWhenActive": true,
+              "LedContainers": [
+                {
+                  "Animation": {
+                    "Columns": 4,
+                    "Rows": 1,
+                    "TotalDuration": 300,
+                    "Frames": [
+                      {
+                        "FrameId": "953d6b9e-3f31-4664-92b7-408a4b191347",
+                        "Colors": {
+                          "0": {
+                            "0": {
+                              "X": 0,
+                              "Y": 0,
+                              "Color": "148, 0, 211"
+                            },
+                            "1": {
+                              "X": 1,
+                              "Y": 0,
+                              "Color": "0, 0, 255"
+                            },
+                            "2": {
+                              "X": 2,
+                              "Y": 0,
+                              "Color": "148, 0, 211"
+                            },
+                            "3": {
+                              "X": 3,
+                              "Y": 0,
+                              "Color": "0, 0, 255"
+                            },
+                            "4": {
+                              "X": 4,
+                              "Y": 0,
+                              "Color": "Transparent"
+                            },
+                            "5": {
+                              "X": 5,
+                              "Y": 0,
+                              "Color": "Transparent"
+                            },
+                            "6": {
+                              "X": 6,
+                              "Y": 0,
+                              "Color": "Transparent"
+                            },
+                            "7": {
+                              "X": 7,
+                              "Y": 0,
+                              "Color": "Transparent"
+                            }
+                          }
+                        },
+                        "FrameDuration": 100
+                      },
+                      {
+                        "FrameId": "2ccf8f1e-4d55-4a36-ba26-361031b38127",
+                        "Colors": {
+                          "0": {
+                            "0": {
+                              "X": 0,
+                              "Y": 0,
+                              "Color": "0, 0, 255"
+                            },
+                            "1": {
+                              "X": 1,
+                              "Y": 0,
+                              "Color": "148, 0, 211"
+                            },
+                            "2": {
+                              "X": 2,
+                              "Y": 0,
+                              "Color": "0, 0, 255"
+                            },
+                            "3": {
+                              "X": 3,
+                              "Y": 0,
+                              "Color": "148, 0, 211"
+                            }
+                          }
+                        },
+                        "FrameDuration": 200
+                      }
+                    ],
+                    "SelectedFrameId": "2ccf8f1e-4d55-4a36-ba26-361031b38127",
+                    "PenColor": "0, 0, 255"
+                  },
+                  "StartPosition": 17,
+                  "ContainerId": "9e39fd19-ba12-48cd-bdfa-fc373b874913",
+                  "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.AnimationContainer",
+                  "Description": "Hand drawn animation/pattern",
+                  "IsEnabled": true
+                }
+              ],
+              "StackLeftToRight": false,
+              "StartPosition": 1,
+              "ContainerId": "0a2f8ba4-5ba3-407e-8a7b-46414f268201",
+              "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Groups.CustomConditionalGroupContainer",
+              "Description": "Pit Limiter is ON",
               "IsEnabled": true
             }
           ],
@@ -572,7 +914,7 @@
           "StartPosition": 1,
           "ContainerId": "268a4a8e-a9c7-437a-aaa9-57e648de6461",
           "ContainerType": "SimHub.Plugins.DataPlugins.RGBDriver.LedsContainers.Groups.MirrorGroupContainer",
-          "Description": "Mirror leds",
+          "Description": "Shift Light",
           "IsEnabled": true
         },
         {
